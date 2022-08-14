@@ -22,7 +22,8 @@ setopt interactivecomments  # recognize comments
 # define pager dependant on what is available (less or more)
 if (( ${+commands[less]} )); then
   env_default 'PAGER' 'less'
-  env_default 'LESS' '-R'
+  # env_default 'LESS' '-R'
+  env_default 'LESS' '-F -X -R'
 elif (( ${+commands[more]} )); then
   env_default 'PAGER' 'more'
 fi
