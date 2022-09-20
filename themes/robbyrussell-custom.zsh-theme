@@ -1,5 +1,5 @@
 prompt_end() {
-  echo "\n> "
+  echo "\n[$(date +%H:%M)] > "
 }
 
 PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
